@@ -6,6 +6,7 @@
     --black-300: #F2F2F2;
 
     --primary-100: #19B4A1;
+    --primary-800: #0e8376;
 }
 
 html,
@@ -85,9 +86,13 @@ nav {
     margin-right: 20px;
 }
 
-.nav-logo:hover,
-.nav-cart button:hover {
+.nav-logo:hover {
     opacity: 0.8;
+    transition: 0.3s;
+}
+
+.nav-cart button:hover {
+    background-color: var(--primary-800);
     transition: 0.3s;
 }
 
