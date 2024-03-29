@@ -5,8 +5,8 @@
     --black-200: #777777;
     --black-300: #F2F2F2;
 
-    --primary-100: #19B4A1;
-    --primary-800: #0e8376;
+    --primary-100: #984ff8;
+    --primary-800: #763ac5;
 }
 
 html,
@@ -23,7 +23,44 @@ body {
     box-sizing: border-box;
 }
 
+button {
+    font-family: "Inter", sans-serif;
+    background-color: var(--primary-100);
+    color: var(--white-100);
+    border: none;
+    padding: 8px 20px 8px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    border-radius: 200px;
+    cursor: pointer;
+    margin-right: 20px;
+}
 
+button:hover {
+    background-color: var(--primary-800);
+    transition: 0.3s;
+}
+
+.button-primary {
+    font-family: "Inter", sans-serif;
+    background-color: var(--primary-100);
+    color: var(--white-100);
+    border: none;
+    padding: 16px 32px 16px 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.large-button:hover {
+    background-color: var(--primary-800);
+    transition: 0.3s;
+}
 
 nav {
     background-color: var(--white-100);
@@ -71,28 +108,8 @@ nav {
     align-items: center;
 }
 
-.nav-cart button {
-    font-family: "Inter", sans-serif;
-    background-color: var(--primary-100);
-    color: var(--white-100);
-    border: none;
-    padding: 8px 20px 8px 20px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    /* 150% */
-    border-radius: 200px;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
 .nav-logo:hover {
     opacity: 0.8;
-    transition: 0.3s;
-}
-
-.nav-cart button:hover {
-    background-color: var(--primary-800);
     transition: 0.3s;
 }
 
@@ -167,20 +184,19 @@ nav {
 
 
 
-.section {
-    padding: 16px 128px 16px 128px;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
+.main-section {
+    height: auto;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
+    flex-direction: column;
+    color: var(--white-100);
+    gap: 0;
 }
 
 .section-1 {
-    padding-top: 120px;
+    height: auto;
+    flex-direction: column;
+    padding: 28px;
     background-color: var(--white-100);
     background-size: cover;
     background-position: center;
@@ -189,6 +205,27 @@ nav {
     align-items: start;
     justify-content: start;
     color: var(--black-100);
+}
+.section-1-container{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: flex-start; 
+    justify-content: flex-start;
+}
+
+.section-1-book-collection{
+    width: 100%; 
+    height: 100%;
+    min-height: 480px; 
+    padding-left: 80px; 
+    padding-right: 80px; 
+    background: #F6F6F6; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    justify-content: space-between; 
+    align-items: flex-end; 
+    display: inline-flex;
 }
 
 .section-2 {
@@ -249,3 +286,5 @@ nav {
         transform: translateY(0);
     }
 }
+
+
