@@ -58,7 +58,6 @@ button:hover {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
     border-radius: 200px;
     cursor: pointer;
 }
@@ -69,23 +68,34 @@ button:hover {
 }
 
 h1 {
-    color: var(--Black-100, #000);
+    color: var(--black-100, #000);
     font-family: Inter;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: 80px;
     letter-spacing: -1.28px;
+    margin: 8px 0px 8px 0px;
 }
 
 h2 {
-    color: var(--Black-100, #000);
+    color: var(--black-100, #000);
     font-family: Inter;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 60px;
     letter-spacing: -1.44px;
+    margin: 4px 0px 4px 0px;
+
+}
+
+h6 {
+    color: var(--black-100, #000);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
 }
 
 p {
@@ -93,6 +103,7 @@ p {
     margin-bottom: 40px;
     animation-delay: 0.3s;
     text-align: left;
+    margin: 4px 0px 4px 0px;
 }
 
 a {
@@ -146,7 +157,7 @@ nav {
     padding: 0;
 }
 
-.nav-cart {
+.nav-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,20 +172,27 @@ nav {
     display: none;
 }
 
-@media (max-width: 767px) {
+.nav-login-button{
+    display: block;
+}
+
+@media (max-width: 1100px) {
     nav {
         flex-direction: row;
         padding: 16px 28px 16px 28px;
     }
 
-    .nav-cart {
+    .nav-buttons {
         flex-direction: row;
-
     }
 
-    .nav-cart button {
+    .nav-buttons button {
         padding: 8px 16px 8px 16px;
         font-size: 14px;
+    }
+
+    .nav-login-button{
+        display: none;
     }
 
     .nav-menu-icon {
@@ -234,7 +252,7 @@ nav {
 .section-1 {
     height: auto;
     flex-direction: column;
-    padding: 48px;
+    padding: 100px 48px 40px 48px;
     background-color: var(--white-100);
     background-size: cover;
     background-position: center;
@@ -273,7 +291,7 @@ nav {
 .section-2 {
     height: auto;
     flex-direction: column;
-    padding: 48px;
+    padding: 0px 48px 0px 48px;
     background-color: var(--white-100);
     background-size: cover;
     background-position: center;
@@ -282,16 +300,95 @@ nav {
     align-items: start;
     justify-content: start;
     color: var(--black-100);
+    gap: 80px;
 }
 
 .section-2-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 92px;
+    padding: 0px 92px 0px 92px;
     align-items: flex-start;
     justify-content: flex-start;
+    gap: 16px;
 }
+
+
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 100px;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 92px 0px 92px;
+}
+
+.card {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.card svg{
+    margin-bottom: 16px;
+}
+
+.card-text {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text h6 {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.card-text p {
+    font-size: 16px;
+    color: var(--black-300);
+    margin-top: 4px;
+    margin-bottom: 0;
+    line-height: 26px;
+}
+
+
+@media (max-width: 768px) {
+    .section-1{
+        padding: 100px 28px 40px 28px;
+    }
+
+    .section-1-container{
+        padding: 0;
+    }
+
+    .section-2{
+        padding: 100px 28px 40px 28px;
+    }
+
+    .section-2-container{
+        padding: 0;
+    }
+
+    .card-grid {
+        padding: 0;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
 
 
 
