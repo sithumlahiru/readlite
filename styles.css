@@ -252,7 +252,7 @@ nav {
 .section-1 {
     height: auto;
     flex-direction: column;
-    padding: 100px 48px 40px 48px;
+    padding: 120px 48px 40px 48px;
     background-color: var(--white-100);
     background-size: cover;
     background-position: center;
@@ -261,6 +261,7 @@ nav {
     align-items: start;
     justify-content: start;
     color: var(--black-100);
+    gap: 80px;
 }
 
 .section-1-container {
@@ -270,6 +271,7 @@ nav {
     padding: 92px;
     align-items: flex-start;
     justify-content: flex-start;
+    gap: 44px;
 }
 
 .section-1-book-collection {
@@ -284,6 +286,12 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     display: inline-flex;
+}
+
+.section-1-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 
