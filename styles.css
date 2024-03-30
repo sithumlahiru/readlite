@@ -371,8 +371,6 @@ nav {
     gap: 16px;
 }
 
-
-
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -385,6 +383,13 @@ nav {
 .card {
     background-color: #fff;
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    transition: 0.4s;
+    cursor: default;
 }
 
 .card svg {
