@@ -34,7 +34,7 @@ body {
     box-sizing: border-box;
 }
 
-.button-primary {
+.button-primary-lg {
     font-family: "Inter", sans-serif;
     background-color: var(--primary-100);
     color: var(--white-100);
@@ -49,12 +49,35 @@ body {
 
 }
 
-.button-primary:hover {
+.button-primary-lg:hover {
     background-color: var(--primary-800);
     transition: 0.3s;
 }
 
-.button-secondary {
+.button-secondary-lg {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: var(--white-100);
+    color: var(--primary-800);
+    padding: 16px 32px 16px 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    border-radius: 200px;
+    border: 1px solid var(--primary-200);
+}
+
+.button-secondary-lg:hover {
+    transition: 0.2s;
+    opacity: 20%;
+}
+
+
+.button-secondary-sm {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -71,15 +94,12 @@ body {
     border: 1px solid var(--primary-200);
 }
 
-.button-secondary:hover {
+.button-secondary-sm:hover {
     transition: 0.2s;
     opacity: 60%;
 }
 
-.large-button:hover {
-    background-color: var(--primary-800);
-    transition: 0.3s;
-}
+
 
 h1 {
     color: var(--black-100, #000);
@@ -158,7 +178,7 @@ a:hover {
 /*nav bar*/
 nav {
     background-color: var(--white-100);
-    padding: 24px 60px 24px 60px;
+    padding: 24px 48px 24px 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,7 +306,7 @@ nav {
 .section-1 {
     height: auto;
     flex-direction: column;
-    padding: 120px 48px 40px 48px;
+    padding: 100px 48px 40px 48px;
     background-color: var(--white-100);
     background-size: cover;
     background-position: center;
@@ -295,7 +315,7 @@ nav {
     align-items: start;
     justify-content: flex-start;
     color: var(--black-100);
-    gap: 80px;
+    gap: 40px;
 }
 
 .section-1-container {
@@ -305,7 +325,7 @@ nav {
     padding: 92px;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 44px;
+    gap: 40px;
 }
 
 .section-1-book-collection {
@@ -338,6 +358,11 @@ nav {
 
 .section-1-title {
     animation-delay: 0.2s;
+}
+
+.section-1-buttons{
+    display: flex;
+    gap: 12px;
 }
 
 .section-1-paragraph {
@@ -512,8 +537,9 @@ nav {
     margin: 0;
 }
 
-.section-8 p {
+.section-8 .txt-16{
     text-align: center;
+    color: var(--black-400);
 }
 
 .section-8 h2 {
