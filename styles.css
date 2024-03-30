@@ -121,7 +121,6 @@ h2 {
     line-height: 60px;
     letter-spacing: -1.44px;
     margin: 4px 0px 4px 0px;
-
 }
 
 h6 {
@@ -487,30 +486,10 @@ nav {
     }
 }
 
-
-
-
 .section-3 {
     height: auto;
-    flex-direction: column;
-    padding: 48px;
-    background-color: var(--white-100);
-    background-size: cover;
-    background-position: center;
+    background-color: var(--black-100);
     min-height: 680px;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    color: var(--black-100);
-}
-
-.section-3-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 92px;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 
 .section-8 {
