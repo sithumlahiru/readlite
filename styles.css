@@ -34,7 +34,7 @@ body {
     box-sizing: border-box;
 }
 
-.button-primary-lg {
+.rdl-button-primary-lg {
     font-family: "Inter", sans-serif;
     background-color: var(--primary-100);
     color: var(--white-100);
@@ -49,12 +49,12 @@ body {
 
 }
 
-.button-primary-lg:hover {
+.rdl-button-primary-lg:hover {
     background-color: var(--primary-800);
     transition: 0.3s;
 }
 
-.button-secondary-lg {
+.rdl-button-secondary-lg {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -71,13 +71,13 @@ body {
     border: 1px solid var(--primary-200);
 }
 
-.button-secondary-lg:hover {
+.rdl-button-secondary-lg:hover {
     transition: 0.2s;
     opacity: 20%;
 }
 
 
-.button-secondary-sm {
+.rdl-button-secondary-sm {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -94,7 +94,7 @@ body {
     border: 1px solid var(--primary-200);
 }
 
-.button-secondary-sm:hover {
+.rdl-button-secondary-sm:hover {
     transition: 0.2s;
     opacity: 60%;
 }
