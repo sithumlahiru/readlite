@@ -196,6 +196,13 @@ nav {
 
 .nav-menu-icon {
     display: none;
+    margin-left: 20px;
+}
+
+.nav-menu-icon:hover {
+    transition: 0.2s;
+    opacity: 40%;
+    cursor: pointer;
 }
 
 .nav-login-button {
