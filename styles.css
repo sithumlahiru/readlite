@@ -123,7 +123,7 @@ h1 {
     font-weight: 700;
     line-height: 80px;
     letter-spacing: -1.28px;
-    margin: 8px 0px 8px 0px;
+    margin: 0;
 }
 
 h2 {
@@ -134,7 +134,7 @@ h2 {
     font-weight: 700;
     line-height: 60px;
     letter-spacing: -1.44px;
-    margin: 4px 0px 4px 0px;
+    margin: 0;
 }
 
 h6 {
@@ -143,6 +143,7 @@ h6 {
     font-style: normal;
     font-weight: 600;
     line-height: 23px;
+    margin: 0;
 }
 
 a {
@@ -170,7 +171,7 @@ a:hover {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    margin: 4px 0px 4px 0px;
+    margin: 0;
 }
 
 .txt-18-sb {
@@ -279,7 +280,7 @@ nav {
     align-items: start;
     justify-content: flex-start;
     color: var(--black-100);
-    gap: 100px;
+    gap: 120px;
 }
 
 .section-1-container {
