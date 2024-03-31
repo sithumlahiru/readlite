@@ -651,16 +651,44 @@ nav {
         width: 100%;
     }
 
-    .section-4 {
+    .section-3 {
+        padding: 0;
         flex-direction: column;
+    }
+
+    .section-4 {
+        justify-content: start;
+        flex-direction: column;
+        padding: 0 28px;
+    }
+
+    .section-4-text {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .section-4-graphic {
+        padding: 0;
+    }
+
+    .section-5 {
+        padding: 0 28px;
+    }
+
+    .section-5-text, .section-5-cards {
+        padding: 0;
+    }
+
+    .section-8 {
+        padding: 0 28px;
+    }
+
+    .section-8-container {
+        padding: 0;
     }
 }
 
 @media (min-width: 768px) {
-    .main-section{
-        width: 100%;
-    }
-
     .nav-menu-options {
         display: flex;
     }
