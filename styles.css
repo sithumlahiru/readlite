@@ -6,12 +6,26 @@
     --black-300: #666666;
     --black-400: #777777;
     --black-500: #F2F2F2;
+    --black-600: #DDDEE1;
+    --black-700: #171717;
 
     --primary-100: #98C80E;
     --primary-200: #D0E596;
     --primary-300: #F5FCE0;
+    --primary-400: #EAF4CF;
     --primary-700: #8DBA0C;
     --primary-800: #7BA20B;
+
+
+    --spacing-container-sm: 24px;
+    --spacing-container-md: 48px;
+    --spacing-container-lg: 80px;
+
+    --spacing-content-xsm: 20px;
+    --spacing-content-sm: 28px;
+    --spacing-content-md: 40px;
+    --spacing-content-lg: 80px;
+    --spacing-content-xlg: 192px;
 }
 
 html,
@@ -177,7 +191,7 @@ a:hover {
 /*nav bar*/
 nav {
     background-color: var(--white-100);
-    padding: 24px 48px 24px 48px;
+    padding: 24px var(--spacing-container-md);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,7 +245,7 @@ nav {
 @media (max-width: 1200px) {
     nav {
         flex-direction: row;
-        padding: 16px 28px 16px 28px;
+        padding: 20px var(--spacing-container-sm);
     }
 
     .nav-buttons {
@@ -362,6 +376,16 @@ nav {
 .section-1-buttons{
     display: flex;
     gap: 12px;
+}
+
+.section-1-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-1-bottom p{
+    color: var(--black-300);
 }
 
 .section-1-paragraph {
