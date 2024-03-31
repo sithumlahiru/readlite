@@ -451,7 +451,6 @@ nav {
 .section-4-graphic {
     padding: 0px var(--spacing-container-md) 0px 0px;
     height: auto;
-    width: auto;
 }
 
 
@@ -508,6 +507,10 @@ nav {
     flex-direction: row;
     gap: 20px;
     align-items: center;
+}
+
+.rdl-review-card-username .review-card-user-position{
+    color: var(--black-300);
 }
 
 
@@ -638,6 +641,10 @@ nav {
 
     .card {
         width: 100%;
+    }
+
+    .section-4 {
+        flex-direction: column;
     }
 }
 
