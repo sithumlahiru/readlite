@@ -25,7 +25,8 @@
     --spacing-content-sm: 28px;
     --spacing-content-md: 40px;
     --spacing-content-lg: 80px;
-    --spacing-content-xlg: 192px;
+    --spacing-content-xlg: 144px;
+    --spacing-content-xxlg: 192px;
 }
 
 html,
@@ -58,9 +59,9 @@ body {
     font-weight: 400;
     line-height: 24px;
     border-radius: 12px;
+    text-align: center;
     cursor: pointer;
     animation-delay: 0.2s;
-
 }
 
 .rdl-button-primary-lg:hover {
@@ -82,12 +83,13 @@ body {
     line-height: 24px;
     cursor: pointer;
     border-radius: 12px;
+    text-align: center;
     border: 1px solid var(--primary-200);
 }
 
 .rdl-button-secondary-lg:hover {
     transition: 0.2s;
-    opacity: 20%;
+    opacity: 60%;
 }
 
 
@@ -95,6 +97,7 @@ body {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
+    text-decoration: none;
     font-weight: 400;
     line-height: 24px;
     background-color: var(--white-100);
@@ -137,6 +140,16 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    color: var(--Black-100, #000);
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px;
+    margin: 0;
+}
+
 h6 {
     color: var(--black-100, #000);
     font-size: 18px;
@@ -146,7 +159,7 @@ h6 {
     margin: 0;
 }
 
-a {
+.rdl-menu-btn {
     color: var(--black-200);
     text-decoration: none;
     margin: 0 16px;
@@ -158,10 +171,28 @@ a {
     cursor: pointer;
 }
 
-a:hover {
+.rdl-menu-btn:hover {
     transition: 0.6s;
     background-color: var(--black-500);
     color: var(--black-100);
+}
+
+.txt-14 {
+    color: var(--black-300);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+}
+
+.txt-14-sb {
+    color: var(--black-100);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 0;
 }
 
 .txt-16 {
@@ -190,6 +221,16 @@ a:hover {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
+    line-height: 33px;
+    margin: 0;
+}
+
+.txt-20-sb {
+    color: var(--black-100, #000);
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
     line-height: 33px;
     margin: 0;
 }
@@ -262,7 +303,7 @@ nav {
     height: auto;
     width: 100%;
     color: var(--white-100);
-    gap: 192px;
+    gap: var(--spacing-content-xxlg);
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -297,8 +338,7 @@ nav {
     width: 100%;
     height: 100%;
     min-height: 480px;
-    padding-left: 92px;
-    padding-right: 92px;
+    padding: 80px 80px 0px 80px;
     background: #F6F6F6;
     border-radius: 20px;
     display: flex;
@@ -430,7 +470,6 @@ nav {
     background-color: var(--white-100);
     background-size: cover;
     background-position: center;
-    min-height: 680px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -455,7 +494,7 @@ nav {
     width: 100%;
 }
 
-.section-4-graphic img{
+.section-4-graphic img {
     height: auto;
     width: 100%;
 }
@@ -522,18 +561,102 @@ nav {
     height: 60px;
 }
 
-.rdl-review-card-username .review-card-user-position{
+.rdl-review-card-username .review-card-user-position {
     color: var(--black-300);
 }
 
 
-.section-6{
+.section-6 {
     background-color: var(--primary-300);
-    min-height: 800px;
+    padding: 140px var(--spacing-container-lg) 160px var(--spacing-container-lg);
+}
+
+.section-6-container {
+    height: auto;
+    flex-direction: column;
+    padding: 0px var(--spacing-container-md);
+    display: flex;
+    align-items: center;
+    color: var(--black-100);
+    gap: var(--spacing-content-lg);
+}
+
+.section-6-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.section-6-text h2 {
+    text-align: center;
+}
+
+.section-6-text p {
+    text-align: center;
+}
+
+.rdl-pricing-grid {
+    gap: 2px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--black-500);
+    border-radius: 16px;
+    height: auto;
+    overflow: hidden;
+}
+
+.rdl-pricing-card {
+    background-color: var(--white-100);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 32px;
+    width: 100%;
+    padding: 28px 24px 36px 24px;
+}
+
+.rdl-pricing-card-text {
+    height: auto;
+    gap: 20px;
+    width: 100%;
+}
+
+.rdl-pricing-card-cost {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 20px 0;
+}
+
+.rdl-pricing-card-cost p {
+    margin-left: 4px;
+    color: var(--black-400);
+}
+
+.rdl-pricing-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 24px;
+    border-top: 2px solid var(--black-500);
+}
+
+.rdl-pricing-features .elite-feature{
+    opacity: 0%;
+}
+
+.rdl-pricing-card .rdl-button-primary-lg{
+    padding: 12px 32px;
 }
 
 
-.section-8 {
+
+
+.section-7 {
     padding: 48px;
     display: flex;
     flex-direction: row;
@@ -543,7 +666,7 @@ nav {
     width: 100%;
 }
 
-.section-8-container {
+.section-7-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,16 +676,21 @@ nav {
     width: 100%;
 }
 
-.section-8 button {
+.section-7 button {
     margin: 0;
 }
 
-.section-8 .txt-16 {
+.section-7 .txt-20 {
+    text-align: center;
+    color: var(--black-100);
+}
+
+.section-7 .txt-16 {
     text-align: center;
     color: var(--black-400);
 }
 
-.section-8 h2 {
+.section-7 h2 {
     text-align: center;
 }
 
@@ -591,7 +719,7 @@ nav {
         font-size: 14px;
     }
 
-    .nav-login-button {
+    .nav-buttons .rdl-menu-btn{
         display: none;
     }
 
@@ -621,38 +749,74 @@ nav {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {  
     h1 {
         font-size: 36px;
         line-height: 45px;
+        margin: 0;
     }
 
     h2 {
         font-size: 30px;
         line-height: 38px;
+        margin: 0;
+    }
+
+    .txt-16 {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .txt-18-sb {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    .txt-20 {
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .main-section {
+        gap: var(--spacing-content-xlg);
     }
 
     .section-1 {
-        padding: 140px 28px 40px 28px;
+        padding: 180px var(--spacing-content-sm) var(--spacing-content-sm) var(--spacing-content-sm);
     }
 
     .section-1-container {
         padding: 0;
     }
 
+    .section-1-buttons {
+        flex-direction: column;
+    }
+
+    .section-1-bottom {
+        width: 100%;
+    }
+
+    .section-1-book-collection {
+        padding: 28px 28px 0px 28px;
+    }
+
     .section-2 {
-        padding: 100px 28px 40px 28px;
+        padding: 0px var(--spacing-content-sm);
     }
 
     .section-2-container {
         padding: 0;
     }
 
-    .card-grid {
+    .rdl-card-grid {
         padding: 0;
         width: 100%;
         grid-template-columns: 1fr;
-        gap: 80px;
+        gap: 64px;
     }
 
     .card {
@@ -665,9 +829,10 @@ nav {
     }
 
     .section-4 {
+        height: auto;
         justify-content: start;
         flex-direction: column;
-        padding: 0 28px;
+        padding: 0px var(--spacing-content-sm);
     }
 
     .section-4-text {
@@ -680,15 +845,32 @@ nav {
     }
 
     .section-5 {
-        padding: 0 28px;
+        padding: 0px var(--spacing-content-sm);
     }
 
-    .section-5-text, .section-5-cards {
+    .section-5-text,
+    .section-5-cards {
         padding: 0;
     }
 
+    .section-6{
+        padding: 140px 0px;
+    }
+
+    .section-6-container{
+        padding: 0 var(--spacing-content-sm);
+    }
+
+    .rdl-pricing-grid {
+        flex-direction: column;
+    }
+
+    .rdl-pricing-features .elite-feature{
+        display: none;
+    }
+
     .section-8 {
-        padding: 0 28px;
+        padding: 0px var(--spacing-content-sm);
     }
 
     .section-8-container {
@@ -697,6 +879,10 @@ nav {
 }
 
 @media (min-width: 768px) {
+    .main-section {
+        gap: 144px;
+    }
+
     .nav-menu-options {
         display: flex;
     }
