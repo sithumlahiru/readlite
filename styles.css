@@ -451,6 +451,7 @@ nav {
 .section-4-graphic {
     padding: 0px var(--spacing-container-md) 0px 0px;
     height: auto;
+    width: 100%;
 }
 
 
