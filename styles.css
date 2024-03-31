@@ -517,12 +517,20 @@ nav {
     align-items: center;
 }
 
+.rdl-review-card-user img {
+    width: 60px;
+    height: 60px;
+}
+
 .rdl-review-card-username .review-card-user-position{
     color: var(--black-300);
 }
 
 
-
+.section-6{
+    background-color: var(--primary-300);
+    min-height: 800px;
+}
 
 
 .section-8 {
