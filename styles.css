@@ -455,6 +455,12 @@ nav {
     width: 100%;
 }
 
+.section-4-graphic img{
+    height: auto;
+    width: 100%;
+}
+
+
 
 
 .section-5 {
@@ -651,6 +657,10 @@ nav {
 }
 
 @media (min-width: 768px) {
+    .main-section{
+        width: 100%;
+    }
+
     .nav-menu-options {
         display: flex;
     }
