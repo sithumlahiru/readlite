@@ -314,6 +314,13 @@ nav {
     display: block;
 }
 
+.sm-nav-menu {
+    display: none;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 40px;
+}
+
 
 
 
@@ -567,7 +574,6 @@ nav {
     flex-direction: column;
     gap: 32px;
 }
-
 
 .rdl-review-card-user {
     display: flex;
@@ -895,7 +901,7 @@ nav {
     .nav-menu-icon {
         display: block;
     }
-
+    
     .nav-menu {
         display: none;
     }
@@ -1043,7 +1049,7 @@ nav {
         padding: 0;
     }
 
-    .section-footer{
+    .section-footer {
         padding: 80px var(--spacing-content-sm) 100px var(--spacing-content-sm);
         gap: 48px;
     }
@@ -1075,7 +1081,9 @@ nav {
         width: 100%;
     }
 
-    .section-footer-links-list, a, p{
+    .section-footer-links-list,
+    a,
+    p {
         width: auto;
     }
 
