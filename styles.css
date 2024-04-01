@@ -1321,6 +1321,10 @@ nav {
 }
 
 @media (max-width: 480px) {
+    .rdl-reader-container a{
+        width: 100%;
+    }
+
     .rdl-content-main {
         gap: var(--spacing-content-xlg);
     }
