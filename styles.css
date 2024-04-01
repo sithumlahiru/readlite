@@ -1321,6 +1321,10 @@ nav {
 }
 
 @media (max-width: 480px) {
+    .nav-buttons a{
+        padding: 8px 16px;
+    }
+
     .rdl-reader-container a{
         width: 100%;
     }
