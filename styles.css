@@ -16,7 +16,7 @@
     --primary-400: #D0E596;
     --primary-500: #EAF4CF;
     --primary-600: #F5FCE0;
-    
+
 
     /**** Spacing ****/
     --spacing-container-sm: 28px;
@@ -390,13 +390,17 @@ nav {
     height: 100%;
 }
 
-.rdl-hero-book-1, .rdl-hero-book-2, .rdl-hero-book-3, .rdl-hero-book-4, .rdl-hero-book-5{
+.rdl-hero-book-1,
+.rdl-hero-book-2,
+.rdl-hero-book-3,
+.rdl-hero-book-4,
+.rdl-hero-book-5 {
     height: auto;
     width: 204px;
     display: block;
 }
 
-.rdl-hero-book-sm{
+.rdl-hero-book-sm {
     width: 270px;
     height: auto;
     display: none;
@@ -1075,24 +1079,205 @@ nav {
         padding: 16px;
     }
 
-    .rdl-hero-book-5{
+    .rdl-hero-book-5 {
         display: none;
     }
 
 }
 
 @media (max-width: 1080px) {
-    .rdl-hero-book-5{
+    .rdl-content-main {
+        gap: var(--spacing-content-xxlg);
+    }
+
+    .rdl-hero-book-collection {
+        padding: 0 var(--spacing-container-md);
+    }
+
+
+    .rdl-hero-book-5 {
         display: none;
     }
 
-    .rdl-hero-book-1, .rdl-hero-book-2, .rdl-hero-book-3, .rdl-hero-book-4 {
+    .rdl-hero-book-1,
+    .rdl-hero-book-2,
+    .rdl-hero-book-3,
+    .rdl-hero-book-4 {
         width: calc(100% / 4);
     }
 }
 
 
 @media (max-width: 768px) {
+    .rdl-content-main {
+        gap: var(--spacing-content-xlg);
+    }
+
+    .rdl-hero {
+        gap: 80px;
+        padding: 160px var(--spacing-content-sm) var(--spacing-content-sm) var(--spacing-content-sm);
+    }
+
+    .rdl-hero-container {
+        padding: 0;
+    }
+
+    .rdl-hero-bottom {
+        width: 100%;
+    }
+
+    .rdl-hero-book-collection {
+        padding: 28px 28px 0px 28px;
+    }
+
+    .rdl-benefits {
+        padding: 0px var(--spacing-content-sm);
+    }
+
+    .rdl-benefits-container {
+        padding: 0;
+    }
+
+    .rdl-card-grid {
+        padding: 0;
+        width: 100%;
+        gap: 60px;
+    }
+
+    .rdl-card {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .rdl-collection {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .rdl-monthly-collection-container {
+        padding: 140px var(--spacing-container-sm);
+    }
+
+    .rdl-monthly-collection-head {
+        padding: 0;
+    }
+
+    .rdl-monthly-collection-grid {
+        padding: 0;
+    }
+
+    .rdl-monthly-collection-book-card img {
+        width: 180px;
+        height: auto;
+    }
+
+    .rdl-monthly-collection-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 60px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .rdl-genres {
+        gap: 60px;
+        height: auto;
+        justify-content: start;
+        flex-direction: column;
+        padding: 0px var(--spacing-content-sm);
+    }
+
+    .rdl-genres-text {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .rdl-genres-img-lg {
+        display: none;
+    }
+
+    .rdl-genres-img-sm {
+        display: block;
+        padding: 0;
+        width: 70%
+    }
+
+    .rdl-genres-graphic {
+        padding: 0;
+    }
+
+    .rdl-reviews {
+        padding: 0px var(--spacing-content-sm);
+    }
+
+    .rdl-reviews-text,
+    .rdl-reviews-cards {
+        padding: 0;
+    }
+
+    .rdl-pricing {
+        padding: 140px 0px;
+    }
+
+    .rdl-pricing-container {
+        padding: 0 var(--spacing-content-sm);
+    }
+
+    .rdl-pricing-grid {
+        flex-direction: row;
+    }
+
+    .rdl-reader {
+        padding: 0;
+    }
+
+    .rdl-footer {
+        padding: 80px var(--spacing-content-sm) 100px var(--spacing-content-sm);
+        gap: 48px;
+    }
+
+    .rdl-reader-container {
+        padding: 0px var(--spacing-container-sm);
+    }
+
+    .rdl-footer-top {
+        flex-direction: column;
+        gap: var(--spacing-content-lg);
+        width: auto;
+    }
+
+    .rdl-footer-top-links {
+        flex-direction: row;
+        gap: 120px;
+        width: auto;
+    }
+
+    .rdl-footer-top-links-genres-grid {
+        gap: 100px;
+    }
+
+    .rdl-footer-top-newsletter {
+        flex-direction: column;
+        gap: 24px;
+        width: 70%;
+    }
+
+    .rdl-footer-links-list,
+    a,
+    p {
+        width: auto;
+    }
+
+    .rdl-footer-bottom {
+        flex-direction: row;
+        gap: 44px;
+        align-items: start;
+    }
+}
+
+@media (max-width: 650px) {
     h1 {
         font-size: 36px;
         line-height: 45px;
@@ -1123,65 +1308,52 @@ nav {
         margin: 0;
     }
 
+    .rdl-hero-book-4,
+    .rdl-hero-book-5 {
+        display: none;
+    }
+
+    .rdl-hero-book-1,
+    .rdl-hero-book-2,
+    .rdl-hero-book-3 {
+        width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 480px) {
     .rdl-content-main {
         gap: var(--spacing-content-xlg);
-    }
-
-    .rdl-hero {
-        gap: 80px;
-        padding: 160px var(--spacing-content-sm) var(--spacing-content-sm) var(--spacing-content-sm);
-    }
-
-    .rdl-hero-container {
-        padding: 0;
     }
 
     .rdl-hero-buttons {
         flex-direction: column;
     }
 
-    .rdl-hero-bottom {
-        width: 100%;
-    }
-
     .rdl-hero-book-collection {
-        padding: 28px 28px 0px 28px;
+        align-items: end;
     }
 
-    .rdl-benefits {
-        padding: 0px var(--spacing-content-sm);
-    }
-
-    .rdl-benefits-container {
-        padding: 0;
-    }
-
-    .rdl-card-grid {
-        padding: 0;
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 64px;
-    }
-
-    .card {
+    .rdl-hero-book-sm {
+        display: block;
         width: 100%;
     }
 
-    .rdl-collection {
-        padding: 0;
-        flex-direction: column;
+    .rdl-hero-book-1,
+    .rdl-hero-book-2,
+    .rdl-hero-book-3,
+    .rdl-hero-book-4,
+    .rdl-hero-book-5 {
+        display: none;
     }
 
-    .rdl-monthly-collection-container {
-        padding: 140px var(--spacing-container-sm);
+    .rdl-hero-book-collection-container {
+        justify-content: center;
+
     }
 
-    .rdl-monthly-collection-head {
-        padding: 0;
-    }
-
-    .rdl-monthly-collection-grid {
-        padding: 0;
+    .rdl-monthly-collection-grid{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 40px;
     }
 
     .rdl-monthly-collection-book-card img {
@@ -1189,80 +1361,22 @@ nav {
         height: auto;
     }
 
-    .rdl-monthly-collection-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-gap: 40px;
-        justify-content: space-between;
+    .rdl-genres-img-sm{
         width: 100%;
     }
 
-    .rdl-genres {
-        gap: 60px;
-        height: auto;
-        justify-content: start;
+    .rdl-pricing-grid{
         flex-direction: column;
-        padding: 0px var(--spacing-content-sm);
     }
 
-    .rdl-genres-text {
-        padding: 0;
-        max-width: 100%;
-    }
-
-    .rdl-genres-img-lg {
+    .rdl-pricing-features .elite-feature{
         display: none;
     }
 
-    .rdl-genres-img-sm {
-        display: block;
+    .rdl-card-grid {
         padding: 0;
-    }
-
-    .rdl-genres-graphic {
-        padding: 0;
-    }
-
-    .rdl-reviews {
-        padding: 0px var(--spacing-content-sm);
-    }
-
-    .rdl-reviews-text,
-    .rdl-reviews-cards {
-        padding: 0;
-    }
-
-    .rdl-pricing {
-        padding: 140px 0px;
-    }
-
-    .rdl-pricing-container {
-        padding: 0 var(--spacing-content-sm);
-    }
-
-    .rdl-pricing-grid {
-        flex-direction: column;
-    }
-
-    .rdl-pricing-features .elite-feature {
-        display: none;
-    }
-
-    .rdl-reader {
-        padding: 0;
-    }
-
-    .rdl-footer {
-        padding: 80px var(--spacing-content-sm) 100px var(--spacing-content-sm);
-        gap: 48px;
-    }
-
-    .rdl-reader-container {
-        padding: 0px var(--spacing-container-sm);
-    }
-
-    .rdl-footer-top {
-        flex-direction: column;
-        gap: 60px;
+        grid-template-columns: 1fr;
+        gap: 64px;
         width: 100%;
     }
 
@@ -1272,58 +1386,23 @@ nav {
         width: 100%;
     }
 
-    .rdl-footer-top-links-genres-grid {
+    .rdl-footer-top{
+        width: 100%;
+        gap: 60px;
+    }
+
+    .rdl-footer-top-links-genres-grid{
         gap: 32px;
         width: 100%;
     }
 
     .rdl-footer-top-newsletter {
-        flex-direction: column;
-        gap: 24px;
         width: 100%;
-    }
-
-    .rdl-footer-links-list,
-    a,
-    p {
-        width: auto;
     }
 
     .rdl-footer-bottom {
         flex-direction: column;
         gap: 40px;
-        align-items: start;
-    }
-}
-
-@media (max-width: 650px) {
-    .rdl-hero-book-4, .rdl-hero-book-5{
-        display: none;
-    }
-
-    .rdl-hero-book-1, .rdl-hero-book-2, .rdl-hero-book-3{
-        width: calc(100% / 3);
-    }
-}
-
-@media (max-width: 480px) {
-    .rdl-hero-book-collection {
-        padding: 0px 28px 0px 28px;
-        align-items: end;
-    }
-
-    .rdl-hero-book-sm{
-        display: block;
-        width: 100%;
-    }
-
-    .rdl-hero-book-1, .rdl-hero-book-2, .rdl-hero-book-3, .rdl-hero-book-4, .rdl-hero-book-5{
-        display: none;
-    }
-
-    .rdl-hero-book-collection-container{
-        justify-content: center;
-    
     }
 }
 
