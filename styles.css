@@ -66,6 +66,7 @@ body {
     text-align: center;
     cursor: pointer;
     animation-delay: 0.2s;
+    text-decoration: none;
 }
 
 .rdl-button-primary-lg:hover {
@@ -79,7 +80,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    background-color: var(--white-100);
     color: var(--primary-800);
     padding: 16px 32px 16px 32px;
     font-size: 16px;
@@ -89,11 +89,12 @@ body {
     border-radius: 12px;
     text-align: center;
     border: 1px solid var(--primary-200);
+    text-decoration: none;
 }
 
 .rdl-button-secondary-lg:hover {
     transition: 0.2s;
-    opacity: 60%;
+    background-color: var(--primary-300);
 }
 
 
@@ -113,11 +114,12 @@ body {
     cursor: pointer;
     border-radius: 12px;
     border: 1px solid var(--primary-200);
+    text-decoration: none;
 }
 
 .rdl-button-secondary-sm:hover {
-    transition: 0.2s;
-    opacity: 60%;
+    background-color: var(--primary-300);
+    transition: 0.3s;
 }
 
 
@@ -527,20 +529,20 @@ nav {
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 16px;
 }
 
-.rdl-monthly-collection-head-buttons{
+.rdl-monthly-collection-head-buttons {
     display: flex;
     gap: 8px;
 }
 
-.rdl-monthly-collection-head-buttons:hover{
+.rdl-monthly-collection-head-buttons:hover {
     opacity: 60%;
     cursor: pointer;
 }
 
-.rdl-monthly-collection-head-buttons a{
+.rdl-monthly-collection-head-buttons a {
     padding: 0;
     background-color: var(--Black-700);
     color: var(--white-100);
@@ -549,21 +551,21 @@ nav {
     text-decoration: none;
 }
 
-.rdl-monthly-collection-head-buttons a:hover{
+.rdl-monthly-collection-head-buttons a:hover {
     opacity: 100%;
 }
 
-.rdl-monthly-collection-head p{
+.rdl-monthly-collection-head p {
     color: var(--white-100);
     opacity: 50%;
 }
 
-.rdl-monthly-collection-head h2{
+.rdl-monthly-collection-head h2 {
     color: var(--white-100);
 }
 
 
-.rdl-monthly-collection-grid{
+.rdl-monthly-collection-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     grid-gap: 100px;
@@ -572,7 +574,7 @@ nav {
     padding: 0px var(--spacing-container-md);
 }
 
-.rdl-monthly-collection-book-card{
+.rdl-monthly-collection-book-card {
     width: auto;
     height: auto;
     display: flex;
@@ -580,17 +582,17 @@ nav {
     gap: 8px;
 }
 
-.rdl-monthly-collection-book-card img{
+.rdl-monthly-collection-book-card img {
     width: 180px;
     height: auto;
 }
 
-.rdl-monthly-collection-book-card p{
+.rdl-monthly-collection-book-card p {
     color: var(--black-600);
     margin-left: 4px;
 }
 
-.rdl-monthly-collection-book-card .book-card-genre{
+.rdl-monthly-collection-book-card .book-card-genre {
     opacity: 50%;
 }
 
@@ -1145,20 +1147,20 @@ nav {
         padding: 140px var(--spacing-container-sm);
     }
 
-    .rdl-monthly-collection-head{
+    .rdl-monthly-collection-head {
         padding: 0;
     }
 
-    .rdl-monthly-collection-grid{
+    .rdl-monthly-collection-grid {
         padding: 0;
     }
 
-    .rdl-monthly-collection-book-card img{
+    .rdl-monthly-collection-book-card img {
         width: 140px;
         height: auto;
     }
 
-    .rdl-monthly-collection-grid{
+    .rdl-monthly-collection-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 40px;
         justify-content: space-between;
