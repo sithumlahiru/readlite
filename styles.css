@@ -1306,6 +1306,7 @@ nav {
 @media (max-width: 480px) {
     .rdl-hero-book-collection {
         padding: 0px 28px 0px 28px;
+        align-items: end;
     }
 
     .rdl-hero-book-sm{
