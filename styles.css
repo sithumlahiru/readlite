@@ -383,7 +383,7 @@ nav {
     overflow: hidden;
     justify-content: space-between;
     align-items: flex-end;
-    display: inline-flex;
+    display: flex;
     width: 100%;
     height: 100%;
 }
