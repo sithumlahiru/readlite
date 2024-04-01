@@ -1,22 +1,24 @@
 :root {
-    --white-100: #ffffff;
+    /**** Colors ****/
+    --grey-100: #000000;
+    --grey-200: #171717;
+    --grey-300: #4C4C4C;
+    --grey-400: #666666;
+    --grey-500: #777777;
+    --grey-600: #DDDEE1;
+    --grey-700: #F6F6F6;
+    --grey-800: #F2F2F2;
+    --grey-900: #ffffff;
 
-    --black-100: #000000;
-    --black-200: #4C4C4C;
-    --black-300: #666666;
-    --black-400: #777777;
-    --black-500: #F2F2F2;
-    --black-600: #DDDEE1;
-    --black-700: #171717;
+    --primary-100: #7BA20B;
+    --primary-200: #8DBA0C;
+    --primary-300: #98C80E;
+    --primary-400: #D0E596;
+    --primary-500: #EAF4CF;
+    --primary-600: #F5FCE0;
+    
 
-    --primary-100: #98C80E;
-    --primary-200: #D0E596;
-    --primary-300: #F5FCE0;
-    --primary-400: #EAF4CF;
-    --primary-700: #8DBA0C;
-    --primary-800: #7BA20B;
-
-
+    /**** Spacing ****/
     --spacing-container-sm: 28px;
     --spacing-container-md: 48px;
     --spacing-container-lg: 80px;
@@ -55,8 +57,8 @@ body {
 
 .rdl-button-primary-lg {
     font-family: "Inter", sans-serif;
-    background-color: var(--primary-100);
-    color: var(--white-100);
+    background-color: var(--primary-300);
+    color: var(--grey-900);
     border: none;
     padding: 16px 32px 16px 32px;
     font-size: 16px;
@@ -70,7 +72,7 @@ body {
 }
 
 .rdl-button-primary-lg:hover {
-    background-color: var(--primary-800);
+    background-color: var(--primary-100);
     transition: 0.3s;
 }
 
@@ -80,7 +82,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color: var(--primary-800);
+    color: var(--primary-100);
     padding: 16px 32px 16px 32px;
     font-size: 16px;
     font-weight: 400;
@@ -88,13 +90,13 @@ body {
     cursor: pointer;
     border-radius: 12px;
     text-align: center;
-    border: 1px solid var(--primary-200);
+    border: 1px solid var(--primary-400);
     text-decoration: none;
 }
 
 .rdl-button-secondary-lg:hover {
     transition: 0.2s;
-    background-color: var(--primary-300);
+    background-color: var(--primary-600);
 }
 
 
@@ -105,27 +107,27 @@ body {
     text-decoration: none;
     font-weight: 400;
     line-height: 24px;
-    background-color: var(--white-100);
-    color: var(--primary-800);
+    background-color: var(--grey-900);
+    color: var(--primary-100);
     padding: 8px 20px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     cursor: pointer;
     border-radius: 12px;
-    border: 1px solid var(--primary-200);
+    border: 1px solid var(--primary-400);
     text-decoration: none;
 }
 
 .rdl-button-secondary-sm:hover {
-    background-color: var(--primary-300);
+    background-color: var(--primary-600);
     transition: 0.3s;
 }
 
 
 
 h1 {
-    color: var(--black-100, #000);
+    color: var(--grey-100, #000);
     font-family: Inter;
     font-size: 64px;
     font-style: normal;
@@ -136,7 +138,7 @@ h1 {
 }
 
 h2 {
-    color: var(--black-100, #000);
+    color: var(--grey-100, #000);
     font-family: Inter;
     font-size: 48px;
     font-style: normal;
@@ -147,7 +149,7 @@ h2 {
 }
 
 h3 {
-    color: var(--Black-100, #000);
+    color: var(--grey-100, #000);
     font-family: Inter;
     font-size: 36px;
     font-style: normal;
@@ -157,7 +159,7 @@ h3 {
 }
 
 h5 {
-    color: var(--Black-100, #000);
+    color: var(--grey-100, #000);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -166,7 +168,7 @@ h5 {
 }
 
 h6 {
-    color: var(--black-100, #000);
+    color: var(--grey-100, #000);
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -188,12 +190,12 @@ h6 {
 
 .rdl-menu-btn:hover {
     transition: 0.6s;
-    background-color: var(--black-500);
-    color: var(--black-100);
+    background-color: var(--grey-800);
+    color: var(--grey-100);
 }
 
 .txt-12 {
-    color: var(--Black-400, #777);
+    color: var(--grey-500, #777);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -204,7 +206,7 @@ h6 {
 }
 
 .txt-14 {
-    color: var(--black-300);
+    color: var(--grey-400);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -213,7 +215,7 @@ h6 {
 }
 
 .txt-14-sb {
-    color: var(--black-100);
+    color: var(--grey-100);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -222,7 +224,7 @@ h6 {
 }
 
 .txt-16 {
-    color: var(--black-100, #000);
+    color: var(--grey-100, #000);
     text-align: left;
     font-size: 16px;
     font-style: normal;
@@ -232,7 +234,7 @@ h6 {
 }
 
 .txt-18-sb {
-    color: var(--Black-100, #000);
+    color: var(--grey-100, #000);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -242,7 +244,7 @@ h6 {
 }
 
 .txt-20 {
-    color: var(--black-100, #000);
+    color: var(--grey-100, #000);
     text-align: left;
     font-size: 20px;
     font-style: normal;
@@ -252,7 +254,7 @@ h6 {
 }
 
 .txt-20-sb {
-    color: var(--black-100, #000);
+    color: var(--grey-100, #000);
     text-align: left;
     font-size: 20px;
     font-style: normal;
@@ -265,7 +267,7 @@ h6 {
 
 /*nav bar*/
 nav {
-    background-color: var(--white-100);
+    background-color: var(--grey-900);
     padding: 24px var(--spacing-container-md);
     display: flex;
     justify-content: space-between;
@@ -331,7 +333,7 @@ nav {
 .rdl-content-main {
     height: auto;
     width: 100%;
-    color: var(--white-100);
+    color: var(--grey-900);
     gap: var(--spacing-content-xxlg);
     display: flex;
     justify-content: flex-start;
@@ -346,14 +348,14 @@ nav {
     height: auto;
     flex-direction: column;
     padding: 180px var(--spacing-container-md) var(--spacing-container-md) var(--spacing-container-md);
-    background-color: var(--white-100);
+    background-color: var(--grey-900);
     background-size: cover;
     background-position: center;
     min-height: 680px;
     display: flex;
     align-items: start;
     justify-content: flex-start;
-    color: var(--black-100);
+    color: var(--grey-100);
     gap: 120px;
 }
 
@@ -372,7 +374,7 @@ nav {
     height: 100%;
     min-height: 480px;
     padding: 80px 80px 0px 80px;
-    background: #F6F6F6;
+    background: var(--grey-700);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -422,7 +424,7 @@ nav {
 }
 
 .rdl-hero-bottom p {
-    color: var(--black-300);
+    color: var(--grey-400);
 }
 
 .rdl-hero-paragraph {
@@ -437,14 +439,14 @@ nav {
     height: auto;
     flex-direction: column;
     padding: 0px var(--spacing-container-lg);
-    background-color: var(--white-100);
+    background-color: var(--grey-900);
     background-size: cover;
     background-position: center;
     min-height: 680px;
     display: flex;
     align-items: start;
     justify-content: start;
-    color: var(--black-100);
+    color: var(--grey-100);
     gap: var(--spacing-content-lg);
 }
 
@@ -496,7 +498,7 @@ nav {
 
 .rdl-card-text p {
     font-size: 16px;
-    color: var(--black-300);
+    color: var(--grey-400);
     margin-top: 4px;
     margin-bottom: 0;
     line-height: 26px;
@@ -514,7 +516,7 @@ nav {
 
 .rdl-monthly-collection-container {
     padding: 140px var(--spacing-container-lg) 160px var(--spacing-container-lg);
-    background-color: var(--black-700);
+    background-color: var(--grey-200);
     height: auto;
     width: 100%;
     overflow: visible;
@@ -556,8 +558,8 @@ nav {
 
 .rdl-monthly-collection-head-buttons a {
     padding: 0;
-    background-color: var(--black-700) !important;
-    color: var(--white-100);
+    background-color: var(--grey-200) !important;
+    color: var(--grey-900);
     border: none;
     font-size: 18px;
     text-decoration: none;
@@ -568,12 +570,12 @@ nav {
 }
 
 .rdl-monthly-collection-head p {
-    color: var(--white-100);
+    color: var(--grey-900);
     opacity: 50%;
 }
 
 .rdl-monthly-collection-head h2 {
-    color: var(--white-100);
+    color: var(--grey-900);
 }
 
 
@@ -601,7 +603,7 @@ nav {
 }
 
 .rdl-monthly-collection-book-card p {
-    color: var(--black-600);
+    color: var(--grey-600);
     margin-left: 4px;
 }
 
@@ -617,13 +619,13 @@ nav {
     height: auto;
     flex-direction: row;
     padding: 0px var(--spacing-container-lg);
-    background-color: var(--white-100);
+    background-color: var(--grey-900);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--black-100);
+    color: var(--grey-100);
     gap: var(--spacing-content-lg);
 }
 
@@ -676,13 +678,13 @@ nav {
     height: auto;
     flex-direction: column;
     padding: 0px var(--spacing-container-lg);
-    background-color: var(--white-100);
+    background-color: var(--grey-900);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--black-100);
+    color: var(--grey-100);
     gap: var(--spacing-content-lg);
 }
 
@@ -731,7 +733,7 @@ nav {
 }
 
 .rdl-review-card-username .review-card-user-position {
-    color: var(--black-300);
+    color: var(--grey-400);
 }
 
 
@@ -739,7 +741,7 @@ nav {
 
 /*Pricing Section*/
 .rdl-pricing {
-    background-color: var(--primary-300);
+    background-color: var(--primary-600);
     padding: 140px var(--spacing-container-lg) 160px var(--spacing-container-lg);
 }
 
@@ -749,7 +751,7 @@ nav {
     padding: 0px var(--spacing-container-md);
     display: flex;
     align-items: center;
-    color: var(--black-100);
+    color: var(--grey-100);
     gap: var(--spacing-content-lg);
 }
 
@@ -775,14 +777,14 @@ nav {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: var(--black-500);
+    background-color: var(--grey-800);
     border-radius: 16px;
     height: auto;
     overflow: hidden;
 }
 
 .rdl-pricing-card {
-    background-color: var(--white-100);
+    background-color: var(--grey-900);
     display: flex;
     flex-direction: column;
     height: auto;
@@ -806,7 +808,7 @@ nav {
 
 .rdl-pricing-card-cost p {
     margin-left: 4px;
-    color: var(--black-400);
+    color: var(--grey-500);
 }
 
 .rdl-pricing-features {
@@ -814,7 +816,7 @@ nav {
     flex-direction: column;
     gap: 20px;
     padding-top: 24px;
-    border-top: 2px solid var(--black-500);
+    border-top: 2px solid var(--grey-800);
 }
 
 .rdl-pricing-features .elite-feature {
@@ -855,12 +857,12 @@ nav {
 
 .rdl-reader .txt-20 {
     text-align: center;
-    color: var(--black-100);
+    color: var(--grey-100);
 }
 
 .rdl-reader .txt-16 {
     text-align: center;
-    color: var(--black-400);
+    color: var(--grey-500);
 }
 
 .rdl-reader h2 {
@@ -877,7 +879,7 @@ nav {
     padding: 80px var(--spacing-container-md) 100px var(--spacing-container-md);
     height: auto;
     width: 100%;
-    background-color: var(--black-500);
+    background-color: var(--grey-800);
     gap: 80px;
 }
 
@@ -913,7 +915,7 @@ nav {
 }
 
 .rdl-footer-links-list a {
-    color: var(--black-100);
+    color: var(--grey-100);
     text-decoration: none;
     letter-spacing: 0.4px;
 }
@@ -940,8 +942,8 @@ nav {
     display: flex;
     flex-direction: row;
     padding: 4px;
-    background-color: var(--white-100);
-    border: 1px solid var(--black-600);
+    background-color: var(--grey-900);
+    border: 1px solid var(--grey-600);
     border-radius: 12px;
 }
 
@@ -963,12 +965,12 @@ nav {
 }
 
 .rdl-footer-top-newsletter-top-inputs .txt-14 {
-    color: var(--black-400);
+    color: var(--grey-500);
 }
 
 
 .rdl-footer-top-newsletter-top .txt-16 {
-    color: var(--black-200);
+    color: var(--grey-300);
 }
 
 .rdl-footer-top-newsletter-head {
@@ -985,11 +987,11 @@ nav {
 }
 
 .rdl-footer-top-newsletter-head-text p {
-    color: var(--black-200);
+    color: var(--grey-300);
 }
 
 .rdl-footer-bottom {
-    border-top: 2px solid var(--black-600);
+    border-top: 2px solid var(--grey-600);
     padding-top: 60px;
     display: flex;
     flex-direction: row;
@@ -1006,7 +1008,7 @@ nav {
 }
 
 .rdl-footer-bottom-links a {
-    color: var(--black-200);
+    color: var(--grey-300);
     text-decoration: none;
 }
 
