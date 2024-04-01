@@ -592,6 +592,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    transition: transform 0.3s ease;
 }
 
 .rdl-monthly-collection-book-card img {
