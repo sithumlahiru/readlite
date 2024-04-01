@@ -1310,10 +1310,16 @@ nav {
 
     .rdl-hero-book-sm{
         display: block;
+        width: 100%;
     }
 
     .rdl-hero-book-1, .rdl-hero-book-2, .rdl-hero-book-3, .rdl-hero-book-4, .rdl-hero-book-5{
         display: none;
+    }
+
+    .rdl-hero-book-collection-container{
+        justify-content: center;
+    
     }
 }
 
